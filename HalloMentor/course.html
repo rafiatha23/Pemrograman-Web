@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta name ="viewport" content="with=device-width, initial scale=1.0">
+    <title>Hallo Mentor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Kursus</h1>
+    </section>
+
+<!----- Course ----->
+
+<section class="course">
+    <h1>Kursus yang Kami Tawarkan</h1>
+    <p>Beberapa pilihan kursus yang paling populer.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>HTML</h3>
+            <p>HTML (Hypertext Markup Language) digunakan untuk membuat halaman laman dalam web internet is used to create pages that are displayed on the World Wide Web. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio voluptas libero fuga. Vero nisi pariatur fugiat eius!</p>
+        </div>
+        <div class="course-col">
+            <h3>CSS</h3>
+            <p>CSS (Cascading Style Sheets) berfungsi untuk memperindah desain dari web has function to beautiful web design. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio voluptas libero fuga. Vero nisi pariatur fugiat eius! Laboriosam voluptatum officiis.</p>
+        </div>
+        <div class="course-col">
+            <h3>PHP</h3>
+            <p>PHP (PHP: Hypertext Preprocessor) digunakanuntuk menghubungkan antara HTML dan  has function to connect between HTML and JSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio voluptas libero fuga. Vero nisi pariatur fugiat eius! Laboriosam voluptatum.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>Bayangkan betapa lebih mudahnya jika kamu memiliki seorang mentor berpengalaman yang siap memberikan ilmu, saran, dan bisa kamu ajak berdiskusi<br>untuk menyelesaikan berbagai permasalahan dalam menggapai impianmu. Bersama Hallo Mentor kamu bisa mengatasinya.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Hallo Mentor</p>
+</section>
+
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
